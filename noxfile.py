@@ -18,3 +18,9 @@ def mypy(session):
     session.install("poetry")
     session.run("poetry", "install")
     session.run("mypy", "bot")
+
+
+@nox.session
+def isort(session):
+    session.install("isort")
+    session.run("isort", "--check", "bot")

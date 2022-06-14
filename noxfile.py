@@ -15,5 +15,6 @@ def codespell(session):
 
 @nox.session
 def mypy(session):
-    session.install("mypy")
+    session.install("poetry")
+    session.run("poetry", "install")
     session.run("mypy", "bot")

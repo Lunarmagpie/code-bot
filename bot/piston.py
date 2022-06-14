@@ -1,7 +1,7 @@
 import dataclasses
+
 import pyston  # type:ignore
 from pyston import exceptions  # type:ignore
-
 
 client = pyston.PystonClient()
 

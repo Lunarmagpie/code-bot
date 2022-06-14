@@ -1,8 +1,8 @@
-from black import out
 import crescent
 import hikari
-from bot import utils
-from bot import piston
+from black import out
+
+from bot import piston, utils
 
 plugin = crescent.Plugin("eval")
 

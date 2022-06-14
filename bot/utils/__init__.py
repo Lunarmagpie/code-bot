@@ -1,4 +1,7 @@
-def split(string: str, delim: str):
+from typing import Generator
+
+
+def split(string: str, delim: str) -> Generator[str, None, None]:
     cur_sec = ""
 
     i = 0

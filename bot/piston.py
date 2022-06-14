@@ -1,7 +1,7 @@
 import dataclasses
 
 import pyston  # type:ignore
-from pyston import exceptions  # type:ignore
+from pyston import exceptions
 
 client = pyston.PystonClient()
 
@@ -12,7 +12,7 @@ class Output:
     success: bool
 
 
-class ExecutionError(exceptions.ExecutionError):
+class ExecutionError(exceptions.ExecutionError):  # type: ignore
     ...
 
 

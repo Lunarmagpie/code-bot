@@ -1,6 +1,5 @@
 import crescent
 import hikari
-from black import out
 
 from bot import piston, utils
 
@@ -13,7 +12,7 @@ class EvalError(Exception):
 
 @plugin.include
 @crescent.message_command(name="Run")
-async def run(ctx: crescent.Context, message: hikari.Message):
+async def run(ctx: crescent.Context, message: hikari.Message) -> None:
     if not message.content:
         return
 

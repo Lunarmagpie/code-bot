@@ -3,7 +3,7 @@ import hikari
 
 from bot import piston, utils
 
-plugin = crescent.Plugin("eval")
+plugin = crescent.Plugin()
 
 
 class EvalError(Exception):
